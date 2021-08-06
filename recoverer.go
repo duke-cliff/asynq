@@ -78,7 +78,7 @@ func (r *recoverer) recover() {
 	deadline := time.Now().Add(-30 * time.Second)
 	msgs, err := r.broker.ListDeadlineExceeded(deadline, r.queues...)
 	if err != nil {
-		r.logger.Warn("recoverer: could not list deadline exceeded tasks")
+		r.logger.Warnf("recoverer: could not list deadline exceeded tasks: %s", err.Error())
 		return
 	}
 	const errMsg = "deadline exceeded"
