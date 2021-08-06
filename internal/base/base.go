@@ -19,7 +19,7 @@ import (
 )
 
 // Version of asynq library and CLI.
-const Version = "0.17.2"
+const Version = "0.17.3"
 
 // DefaultQueueName is the queue name used if none are specified by user.
 const DefaultQueueName = "default"
