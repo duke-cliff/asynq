@@ -67,6 +67,7 @@ func (r *recoverer) start(wg *sync.WaitGroup) {
 				return
 			case <-timer.C:
 				r.recover()
+				timer.Reset(r.interval)
 			}
 		}
 	}()
