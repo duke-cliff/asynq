@@ -10,7 +10,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/hibiken/asynq/inspeq"
+	"github.com/duke-cliff/asynq/inspeq"
 	"github.com/spf13/cobra"
 )
 

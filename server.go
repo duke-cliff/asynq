@@ -15,10 +15,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/duke-cliff/asynq/internal/base"
+	"github.com/duke-cliff/asynq/internal/log"
+	"github.com/duke-cliff/asynq/internal/rdb"
 	"github.com/go-redis/redis/v7"
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/log"
-	"github.com/hibiken/asynq/internal/rdb"
 )
 
 // Server is responsible for managing the task processing.

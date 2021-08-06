@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
+	h "github.com/duke-cliff/asynq/internal/asynqtest"
+	"github.com/duke-cliff/asynq/internal/base"
+	"github.com/duke-cliff/asynq/internal/rdb"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/rdb"
 )
 
 // fakeHeartbeater receives from starting and finished channels and do nothing.
@@ -223,7 +223,7 @@ func TestProcessorSuccessWithMultipleQueues(t *testing.T) {
 	}
 }
 
-// https://github.com/hibiken/asynq/issues/166
+// https://github.com/duke-cliff/asynq/issues/166
 func TestProcessTasksWithLargeNumberInPayload(t *testing.T) {
 	r := setup(t)
 	rdbClient := rdb.NewRDB(r)

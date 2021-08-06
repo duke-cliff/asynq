@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
+	h "github.com/duke-cliff/asynq/internal/asynqtest"
+	"github.com/duke-cliff/asynq/internal/base"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/google/uuid"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/base"
 )
 
 func TestAllQueues(t *testing.T) {

@@ -13,14 +13,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/duke-cliff/asynq"
+	h "github.com/duke-cliff/asynq/internal/asynqtest"
+	"github.com/duke-cliff/asynq/internal/base"
+	"github.com/duke-cliff/asynq/internal/log"
+	"github.com/duke-cliff/asynq/internal/rdb"
 	"github.com/go-redis/redis/v7"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/hibiken/asynq"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/log"
-	"github.com/hibiken/asynq/internal/rdb"
 )
 
 // variables used for package testing.

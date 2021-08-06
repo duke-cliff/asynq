@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Free unique lock when task is deleted (https://github.com/hibiken/asynq/issues/275).
+- Free unique lock when task is deleted (https://github.com/duke-cliff/asynq/issues/275).
 
 ## [0.17.1] - 2021-04-04
 
@@ -39,7 +39,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.15.0] - 2021-01-31
 
-**IMPORTATNT**: All `Inspector` related code are moved to subpackage "github.com/hibiken/asynq/inspeq"
+**IMPORTATNT**: All `Inspector` related code are moved to subpackage "github.com/duke-cliff/asynq/inspeq"
 
 ### Changed
 
@@ -93,7 +93,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- `Scheduler` type is added to enable periodic tasks. See the godoc for its APIs and [wiki](https://github.com/hibiken/asynq/wiki/Periodic-Tasks) for the getting-started guide.
+- `Scheduler` type is added to enable periodic tasks. See the godoc for its APIs and [wiki](https://github.com/duke-cliff/asynq/wiki/Periodic-Tasks) for the getting-started guide.
 
 ### Changed
 
@@ -108,7 +108,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.12.0] - 2020-09-12
 
-**IMPORTANT**: If you are upgrading from a previous version, please install the latest version of the CLI `go get -u github.com/hibiken/asynq/tools/asynq` and run `asynq migrate` command. No process should be writing to Redis while you run the migration command.
+**IMPORTANT**: If you are upgrading from a previous version, please install the latest version of the CLI `go get -u github.com/duke-cliff/asynq/tools/asynq` and run `asynq migrate` command. No process should be writing to Redis while you run the migration command.
 
 ## The semantics of queue have changed
 
@@ -200,13 +200,13 @@ To view details on any command, use `asynq help <command> <subcommand>`.
 
 ### Fixed
 
-- Fixes issue of same tasks processed by more than one worker (https://github.com/hibiken/asynq/issues/90).
+- Fixes issue of same tasks processed by more than one worker (https://github.com/duke-cliff/asynq/issues/90).
 
 ## [0.9.3] - 2020-06-12
 
 ### Fixed
 
-- Fixes the JSON number overflow issue (https://github.com/hibiken/asynq/issues/166).
+- Fixes the JSON number overflow issue (https://github.com/duke-cliff/asynq/issues/166).
 
 ## [0.9.2] - 2020-06-08
 
@@ -240,7 +240,7 @@ To view details on any command, use `asynq help <command> <subcommand>`.
 
 ### Fixed
 
-- [Fixed cancelfunc leak](https://github.com/hibiken/asynq/pull/145)
+- [Fixed cancelfunc leak](https://github.com/duke-cliff/asynq/pull/145)
 
 ## [0.8.1] - 2020-04-27
 

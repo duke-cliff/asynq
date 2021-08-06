@@ -12,11 +12,11 @@ import (
 	"strings"
 	"text/tabwriter"
 
+	"github.com/duke-cliff/asynq"
+	"github.com/duke-cliff/asynq/inspeq"
+	"github.com/duke-cliff/asynq/internal/base"
+	"github.com/duke-cliff/asynq/internal/rdb"
 	"github.com/go-redis/redis/v7"
-	"github.com/hibiken/asynq"
-	"github.com/hibiken/asynq/inspeq"
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/rdb"
 	"github.com/spf13/cobra"
 
 	homedir "github.com/mitchellh/go-homedir"

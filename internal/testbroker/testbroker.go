@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/duke-cliff/asynq/internal/base"
 	"github.com/go-redis/redis/v7"
-	"github.com/hibiken/asynq/internal/base"
 )
 
 var errRedisDown = errors.New("asynqtest: redis is down")

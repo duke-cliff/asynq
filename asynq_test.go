@@ -10,10 +10,10 @@ import (
 	"strings"
 	"testing"
 
+	h "github.com/duke-cliff/asynq/internal/asynqtest"
+	"github.com/duke-cliff/asynq/internal/log"
 	"github.com/go-redis/redis/v7"
 	"github.com/google/go-cmp/cmp"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/log"
 )
 
 //============================================================================

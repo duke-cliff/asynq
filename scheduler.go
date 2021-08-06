@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/duke-cliff/asynq/internal/base"
+	"github.com/duke-cliff/asynq/internal/log"
+	"github.com/duke-cliff/asynq/internal/rdb"
 	"github.com/go-redis/redis/v7"
 	"github.com/google/uuid"
-	"github.com/hibiken/asynq/internal/base"
-	"github.com/hibiken/asynq/internal/log"
-	"github.com/hibiken/asynq/internal/rdb"
 	"github.com/robfig/cron/v3"
 )
 

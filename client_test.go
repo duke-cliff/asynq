@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
+	h "github.com/duke-cliff/asynq/internal/asynqtest"
+	"github.com/duke-cliff/asynq/internal/base"
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	h "github.com/hibiken/asynq/internal/asynqtest"
-	"github.com/hibiken/asynq/internal/base"
 )
 
 func TestClientEnqueueWithProcessAtOption(t *testing.T) {

@@ -9,9 +9,9 @@ import (
 	"io"
 	"os"
 
+	"github.com/duke-cliff/asynq/inspeq"
+	"github.com/duke-cliff/asynq/internal/rdb"
 	"github.com/fatih/color"
-	"github.com/hibiken/asynq/inspeq"
-	"github.com/hibiken/asynq/internal/rdb"
 	"github.com/spf13/cobra"
 )
 

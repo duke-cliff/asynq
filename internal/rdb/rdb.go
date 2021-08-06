@@ -12,8 +12,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/duke-cliff/asynq/internal/base"
 	"github.com/go-redis/redis/v7"
-	"github.com/hibiken/asynq/internal/base"
 	"github.com/spf13/cast"
 )
 

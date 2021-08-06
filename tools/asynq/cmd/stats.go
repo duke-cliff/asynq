@@ -13,8 +13,8 @@ import (
 	"text/tabwriter"
 	"time"
 
+	"github.com/duke-cliff/asynq/internal/rdb"
 	"github.com/fatih/color"
-	"github.com/hibiken/asynq/internal/rdb"
 	"github.com/spf13/cobra"
 )
 

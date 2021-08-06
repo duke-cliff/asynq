@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/duke-cliff/asynq/internal/base"
 	"github.com/go-redis/redis/v7"
 	"github.com/google/uuid"
-	"github.com/hibiken/asynq/internal/base"
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -194,7 +194,7 @@ func printError(err error) {
 	fmt.Println(err)
 	fmt.Println()
 	fmt.Println("Migrate command error")
-	fmt.Println("Please file an issue on Github at https://github.com/hibiken/asynq/issues/new/choose")
+	fmt.Println("Please file an issue on Github at https://github.com/duke-cliff/asynq/issues/new/choose")
 }
 
 func partitionZSetMembersByQueue(c *redis.Client, key string, newKeyFunc func(string) string) error {
